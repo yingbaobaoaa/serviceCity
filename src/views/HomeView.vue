@@ -49,7 +49,7 @@
     </div>
 
     <!-- 数据内容区域 -->
-    <div v-if="dataStore.events.length > 0 || dataStore.sensors.length > 0" class="content">
+    <div class="content">
       <StatisticsCards :statistics="dataStore.statistics" />
 
       <ChartsPanel
@@ -68,14 +68,14 @@
     </div>
 
     <!-- 空状态 -->
-    <div v-else class="empty-state">
+    <!-- <div v-else class="empty-state">
       <el-empty description="暂无数据">
         <el-button type="primary" @click="showUploadDialog = true">
           <el-icon><Upload /></el-icon>
           立即导入数据
         </el-button>
       </el-empty>
-    </div>
+    </div> -->
 
     <!-- 数据上传弹窗 -->
     <el-dialog

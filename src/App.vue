@@ -94,6 +94,7 @@ const initializeData = async () => {
     loading.close()
 
     ElMessage.success('数据加载成功！')
+    window.location.reload()
     console.log('数据初始化完成')
 
   } catch (error) {
@@ -136,9 +137,7 @@ const handleAlertDismiss = (alertId: string) => {
 // Vue 生命周期钩子
 onMounted(() => {
   // 延迟加载数据，确保页面先渲染
-  setTimeout(() => {
-    initializeData()
-  }, 100)
+  initializeData()
 
   // 初始化预警系统
   setTimeout(() => {
