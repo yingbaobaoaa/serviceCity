@@ -1,0 +1,902 @@
+[
+  {
+    "id": "EV20251112001",
+    "type": "道路积水",
+    "description": "建国路与光华路交叉口积水严重，车辆通行困难",
+    "location": { "district": "朝阳区", "street": "建国路", "lat": 39.9087, "lng": 116.4075 },
+    "reportTime": "2025-11-12T08:30:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112002",
+    "type": "路灯故障",
+    "description": "中关村大街南段多盏路灯不亮",
+    "location": { "district": "海淀区", "street": "中关村大街", "lat": 39.9598, "lng": 116.3212 },
+    "reportTime": "2025-11-12T09:15:00",
+    "reporterType": "网格员",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112003",
+    "type": "占道经营",
+    "description": "王府井步行街东侧有流动摊贩聚集",
+    "location": { "district": "东城区", "street": "王府井大街", "lat": 39.9142, "lng": 116.4156 },
+    "reportTime": "2025-11-12T10:05:00",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112004",
+    "type": "井盖缺失",
+    "description": "西直门外大街人行道井盖丢失，存在安全隐患",
+    "location": { "district": "西城区", "street": "西直门外大街", "lat": 39.9321, "lng": 116.3456 },
+    "reportTime": "2025-11-12T07:45:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112005",
+    "type": "噪音扰民",
+    "description": "望京SOHO夜间施工噪音严重",
+    "location": { "district": "朝阳区", "street": "望京街", "lat": 39.9876, "lng": 116.4832 },
+    "reportTime": "2025-11-12T01:20:00",
+    "reporterType": "12345热线",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112006",
+    "type": "垃圾堆积",
+    "description": "回龙观小区东门垃圾未清运，已堆积两天",
+    "location": { "district": "昌平区", "street": "回龙观东大街", "lat": 40.0765, "lng": 116.3289 },
+    "reportTime": "2025-11-12T11:10:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112007",
+    "type": "道路积水",
+    "description": "亦庄荣华中路因暴雨积水超50cm",
+    "location": { "district": "大兴区", "street": "荣华中路", "lat": 39.7823, "lng": 116.5123 },
+    "reportTime": "2025-11-12T08:55:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112008",
+    "type": "交通信号灯故障",
+    "description": "复兴门内大街与南礼士路交叉口红绿灯失灵",
+    "location": { "district": "西城区", "street": "复兴门内大街", "lat": 39.9098, "lng": 116.3567 },
+    "reportTime": "2025-11-12T09:30:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112009",
+    "type": "绿化破坏",
+    "description": "奥林匹克公园北园草坪被踩踏严重",
+    "location": { "district": "朝阳区", "street": "科荟路", "lat": 40.0012, "lng": 116.3945 },
+    "reportTime": "2025-11-12T14:20:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112010",
+    "type": "违建举报",
+    "description": "通州某小区顶层加建阳光房",
+    "location": { "district": "通州区", "street": "新华西街", "lat": 39.9034, "lng": 116.6543 },
+    "reportTime": "2025-11-12T10:45:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112011",
+    "type": "路灯故障",
+    "description": "三里屯太古里南区路灯闪烁",
+    "location": { "district": "朝阳区", "street": "三里屯路", "lat": 39.9336, "lng": 116.4462 },
+    "reportTime": "2025-11-12T12:15:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112012",
+    "type": "道路积水",
+    "description": "中关村西区地下通道有积水",
+    "location": { "district": "海淀区", "street": "中关村西区", "lat": 39.9928, "lng": 116.3125 },
+    "reportTime": "2025-11-12T09:05:00",
+    "reporterType": "网格员",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112013",
+    "type": "占道经营",
+    "description": "前门大街有商贩占道摆摊",
+    "location": { "district": "东城区", "street": "前门大街", "lat": 39.8995, "lng": 116.3965 },
+    "reportTime": "2025-11-12T11:30:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112014",
+    "type": "井盖缺失",
+    "description": "金融街一处井盖被偷，路面凹陷",
+    "location": { "district": "西城区", "street": "金融街", "lat": 39.9088, "lng": 116.3612 },
+    "reportTime": "2025-11-12T06:50:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112015",
+    "type": "噪音扰民",
+    "description": "朝阳公园附近广场舞音量过大",
+    "location": { "district": "朝阳区", "street": "朝阳公园路", "lat": 39.9412, "lng": 116.4678 },
+    "reportTime": "2025-11-12T19:30:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112016",
+    "type": "垃圾堆积",
+    "description": "天通苑北二区垃圾桶满溢未清理",
+    "location": { "district": "昌平区", "street": "天通苑北二区", "lat": 40.0621, "lng": 116.4012 },
+    "reportTime": "2025-11-12T10:20:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112017",
+    "type": "交通信号灯故障",
+    "description": "西红门地铁站B口附近红绿灯不亮",
+    "location": { "district": "大兴区", "street": "西红门地铁站", "lat": 39.7987, "lng": 116.3345 },
+    "reportTime": "2025-11-12T08:45:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112018",
+    "type": "绿化破坏",
+    "description": "玉渊潭公园内有游客折花",
+    "location": { "district": "海淀区", "street": "玉渊潭公园", "lat": 39.9123, "lng": 116.3123 },
+    "reportTime": "2025-11-12T15:40:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112019",
+    "type": "违建举报",
+    "description": "梨园南街某餐厅后厨扩建违建",
+    "location": { "district": "通州区", "street": "梨园南街", "lat": 39.8891, "lng": 116.6423 },
+    "reportTime": "2025-11-12T13:25:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112020",
+    "type": "道路积水",
+    "description": "丰台区丰台北路积水点",
+    "location": { "district": "丰台区", "street": "丰台北路", "lat": 39.8623, "lng": 116.2891 },
+    "reportTime": "2025-11-12T09:10:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112021",
+    "type": "路灯故障",
+    "description": "石景山古城大街路灯不亮",
+    "location": { "district": "石景山区", "street": "古城大街", "lat": 39.9145, "lng": 116.1891 },
+    "reportTime": "2025-11-12T08:20:00",
+    "reporterType": "网格员",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112022",
+    "type": "占道经营",
+    "description": "朝阳区潘家园旧货市场周边占道",
+    "location": { "district": "朝阳区", "street": "潘家园", "lat": 39.8721, "lng": 116.4456 },
+    "reportTime": "2025-11-12T11:00:00",
+    "reporterType": "城管巡查",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112023",
+    "type": "井盖缺失",
+    "description": "东城区东四北大街井盖缺失",
+    "location": { "district": "东城区", "street": "东四北大街", "lat": 39.9189, "lng": 116.4123 },
+    "reportTime": "2025-11-12T07:30:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112024",
+    "type": "噪音扰民",
+    "description": "丰台区某工地夜间施工噪音",
+    "location": { "district": "丰台区", "street": "丰台南路", "lat": 39.8456, "lng": 116.2987 },
+    "reportTime": "2025-11-12T23:10:00",
+    "reporterType": "12345热线",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112025",
+    "type": "垃圾堆积",
+    "description": "顺义区顺义公园门口垃圾堆积",
+    "location": { "district": "顺义区", "street": "顺义公园", "lat": 40.1289, "lng": 116.6543 },
+    "reportTime": "2025-11-12T12:40:00",
+    "reporterType": "居民投诉",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112026",
+    "type": "道路积水",
+    "description": "房山区良乡东路积水",
+    "location": { "district": "房山区", "street": "良乡东路", "lat": 39.7321, "lng": 116.1456 },
+    "reportTime": "2025-11-12T10:15:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112027",
+    "type": "交通信号灯故障",
+    "description": "门头沟区双峪路红绿灯故障",
+    "location": { "district": "门头沟区", "street": "双峪路", "lat": 39.9345, "lng": 116.1098 },
+    "reportTime": "2025-11-12T09:50:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112028",
+    "type": "绿化破坏",
+    "description": "延庆区妫水公园绿化带被践踏",
+    "location": { "district": "延庆区", "street": "妫水公园", "lat": 40.4567, "lng": 115.9876 },
+    "reportTime": "2025-11-12T14:50:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112029",
+    "type": "违建举报",
+    "description": "密云区鼓楼大街违建拆除后又重建",
+    "location": { "district": "密云区", "street": "鼓楼大街", "lat": 40.3721, "lng": 116.8456 },
+    "reportTime": "2025-11-12T16:30:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112030",
+    "type": "路灯故障",
+    "description": "怀柔区府前街路灯闪烁",
+    "location": { "district": "怀柔区", "street": "府前街", "lat": 40.3189, "lng": 116.6321 },
+    "reportTime": "2025-11-12T13:15:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112031",
+    "type": "占道经营",
+    "description": "平谷区迎宾街早市占道",
+    "location": { "district": "平谷区", "street": "迎宾街", "lat": 40.1456, "lng": 117.1234 },
+    "reportTime": "2025-11-12T08:00:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112032",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖被撬",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T07:15:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112033",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区装修噪音",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:45:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112034",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾清运不及时",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:50:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112035",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水点",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:30:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112036",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯故障",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:25:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112037",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化带被破坏",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:20:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112038",
+    "type": "违建举报",
+    "description": "朝阳区豆各庄地区违建举报",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T16:10:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112039",
+    "type": "路灯故障",
+    "description": "朝阳区豆各庄地区路灯故障",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T12:35:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112040",
+    "type": "占道经营",
+    "description": "朝阳区豆各庄地区占道经营",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:40:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112041",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖缺失",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T07:25:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112042",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区噪音扰民",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T20:00:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112043",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾堆积",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:55:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112044",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:40:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112045",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯故障",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T08:55:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112046",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化破坏",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T14:35:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112047",
+    "type": "违建举报",
+    "description": "朝阳区豆各庄地区违建",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:50:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112048",
+    "type": "路灯故障",
+    "description": "朝阳区豆各庄地区路灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T13:25:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112049",
+    "type": "占道经营",
+    "description": "朝阳区豆各庄地区占道",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T12:10:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112050",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T07:35:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112051",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区噪音",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T21:00:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112052",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:10:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112053",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水点",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:05:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112054",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:00:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112055",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:00:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112056",
+    "type": "违建举报",
+    "description": "朝阳区豆各庄地区违建",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T16:00:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112057",
+    "type": "路灯故障",
+    "description": "朝阳区豆各庄地区路灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T12:45:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112058",
+    "type": "占道经营",
+    "description": "朝阳区豆各庄地区占道",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:20:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112059",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T07:40:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112060",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区噪音",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T22:00:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112061",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:15:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112062",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:10:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112063",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:05:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112064",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:05:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112065",
+    "type": "违建举报",
+    "description": "朝阳区豆各庄地区违建",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T16:05:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112066",
+    "type": "路灯故障",
+    "description": "朝阳区豆各庄地区路灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T12:50:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112067",
+    "type": "占道经营",
+    "description": "朝阳区豆各庄地区占道",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:25:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112068",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T07:45:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112069",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区噪音",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T23:00:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112070",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:20:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112071",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:15:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112072",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:10:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112073",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:10:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112074",
+    "type": "违建举报",
+    "description": "朝阳区豆各庄地区违建",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T16:10:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112075",
+    "type": "路灯故障",
+    "description": "朝阳区豆各庄地区路灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T12:55:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112076",
+    "type": "占道经营",
+    "description": "朝阳区豆各庄地区占道",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:30:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112077",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T07:50:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112078",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区噪音",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T23:30:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112079",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:25:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112080",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:20:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112081",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:15:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112082",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:15:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112083",
+    "type": "违建举报",
+    "description": "朝阳区豆各庄地区违建",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T16:15:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112084",
+    "type": "路灯故障",
+    "description": "朝阳区豆各庄地区路灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T13:00:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112085",
+    "type": "占道经营",
+    "description": "朝阳区豆各庄地区占道",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:35:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112086",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T07:55:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112087",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区噪音",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T23:45:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112088",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:30:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112089",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:25:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112090",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:20:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112091",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:20:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112092",
+    "type": "违建举报",
+    "description": "朝阳区豆各庄地区违建",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T16:20:00",
+    "reporterType": "12345热线",
+    "status": "核查中"
+  },
+  {
+    "id": "EV20251112093",
+    "type": "路灯故障",
+    "description": "朝阳区豆各庄地区路灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T13:05:00",
+    "reporterType": "网格员",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112094",
+    "type": "占道经营",
+    "description": "朝阳区豆各庄地区占道",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:40:00",
+    "reporterType": "城管巡查",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112095",
+    "type": "井盖缺失",
+    "description": "朝阳区豆各庄地区井盖",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T08:00:00",
+    "reporterType": "市民APP",
+    "status": "紧急"
+  },
+  {
+    "id": "EV20251112096",
+    "type": "噪音扰民",
+    "description": "朝阳区豆各庄地区噪音",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T23:59:00",
+    "reporterType": "居民投诉",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112097",
+    "type": "垃圾堆积",
+    "description": "朝阳区豆各庄地区垃圾",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T11:35:00",
+    "reporterType": "居民代表",
+    "status": "已派单"
+  },
+  {
+    "id": "EV20251112098",
+    "type": "道路积水",
+    "description": "朝阳区豆各庄地区积水",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T10:30:00",
+    "reporterType": "市民APP",
+    "status": "未处理"
+  },
+  {
+    "id": "EV20251112099",
+    "type": "交通信号灯故障",
+    "description": "朝阳区豆各庄地区红绿灯",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T09:25:00",
+    "reporterType": "交警上报",
+    "status": "处理中"
+  },
+  {
+    "id": "EV20251112100",
+    "type": "绿化破坏",
+    "description": "朝阳区豆各庄地区绿化",
+    "location": { "district": "朝阳区", "street": "豆各庄", "lat": 39.8567, "lng": 116.5234 },
+    "reportTime": "2025-11-12T15:25:00",
+    "reporterType": "公园管理员",
+    "status": "未处理"
+  }
+]

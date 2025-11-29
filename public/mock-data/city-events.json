@@ -1,0 +1,114 @@
+[
+  {
+    "id": "evt_001",
+    "type": "道路积水",
+    "description": "朝阳区建国路由于强降雨导致严重积水，积水深度约60cm，严重影响交通通行",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路",
+      "lat": 39.9042,
+      "lng": 116.4074
+    },
+    "reportTime": "2024-11-28T08:30:00Z",
+    "reporterType": "市民上报",
+    "status": "待处理"
+  },
+  {
+    "id": "evt_002",
+    "type": "路灯故障",
+    "description": "海淀区中关村大街多盏路灯连续故障，夜间照明严重不足，存在安全隐患",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.9800,
+      "lng": 116.3070
+    },
+    "reportTime": "2024-11-28T20:15:00Z",
+    "reporterType": "巡查发现",
+    "status": "处理中"
+  },
+  {
+    "id": "evt_003",
+    "type": "垃圾溢出",
+    "description": "东城区王府井商业街多个垃圾桶满溢，影响市容环境卫生",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.9139,
+      "lng": 116.4039
+    },
+    "reportTime": "2024-11-28T14:20:00Z",
+    "reporterType": "商户上报",
+    "status": "已派单"
+  },
+  {
+    "id": "evt_004",
+    "type": "噪音污染",
+    "description": "西城区金融街附近建筑施工噪音超标，夜间施工严重影响周边居民休息",
+    "location": {
+      "district": "西城区",
+      "street": "金融街",
+      "lat": 39.9188,
+      "lng": 116.3617
+    },
+    "reportTime": "2024-11-28T22:45:00Z",
+    "reporterType": "居民投诉",
+    "status": "待处理"
+  },
+  {
+    "id": "evt_005",
+    "type": "道路积水",
+    "description": "丰台区南三环由于排水系统故障导致积水，水深约40cm，车辆通行困难",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环",
+      "lat": 39.8584,
+      "lng": 116.2869
+    },
+    "reportTime": "2024-11-28T07:45:00Z",
+    "reporterType": "交警发现",
+    "status": "处理中"
+  },
+  {
+    "id": "evt_006",
+    "type": "空气质量",
+    "description": "通州区运河商务区PM2.5指数超标，空气质量达到中度污染级别",
+    "location": {
+      "district": "通州区",
+      "street": "运河商务区",
+      "lat": 39.9097,
+      "lng": 116.6569
+    },
+    "reportTime": "2024-11-28T16:30:00Z",
+    "reporterType": "监测站",
+    "status": "已处理"
+  },
+  {
+    "id": "evt_007",
+    "type": "路灯故障",
+    "description": "石景山区首钢园周边路灯不亮，影响夜间园区安全",
+    "location": {
+      "district": "石景山区",
+      "street": "首钢园路",
+      "lat": 39.9059,
+      "lng": 116.1436
+    },
+    "reportTime": "2024-11-28T19:00:00Z",
+    "reporterType": "园区管理",
+    "status": "待处理"
+  },
+  {
+    "id": "evt_008",
+    "type": "垃圾溢出",
+    "description": "昌平区回龙观社区垃圾收集点满溢，需要紧急清运处理",
+    "location": {
+      "district": "昌平区",
+      "street": "回龙观大街",
+      "lat": 40.0724,
+      "lng": 116.3264
+    },
+    "reportTime": "2024-11-28T11:10:00Z",
+    "reporterType": "社区上报",
+    "status": "已派单"
+  }
+]

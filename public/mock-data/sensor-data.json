@@ -1,0 +1,182 @@
+[
+  {
+    "sensorId": "snr_001",
+    "type": "积水监测",
+    "location": {
+      "district": "朝阳区",
+      "street": "建国路下凹桥",
+      "lat": 39.9042,
+      "lng": 116.4074
+    },
+    "value": 0.65,
+    "unit": "m",
+    "threshold": 0.3,
+    "timestamp": "2024-11-28T09:00:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_002",
+    "type": "路灯电流",
+    "location": {
+      "district": "海淀区",
+      "street": "中关村大街",
+      "lat": 39.9800,
+      "lng": 116.3070
+    },
+    "value": 0.2,
+    "unit": "A",
+    "threshold": 1.0,
+    "timestamp": "2024-11-28T21:00:00Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "snr_003",
+    "type": "垃圾桶满溢",
+    "location": {
+      "district": "东城区",
+      "street": "王府井大街",
+      "lat": 39.9139,
+      "lng": 116.4039
+    },
+    "value": 0.92,
+    "unit": "%",
+    "threshold": 0.8,
+    "timestamp": "2024-11-28T15:00:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_004",
+    "type": "噪音监测",
+    "location": {
+      "district": "西城区",
+      "street": "金融街",
+      "lat": 39.9188,
+      "lng": 116.3617
+    },
+    "value": 78,
+    "unit": "dB",
+    "threshold": 55,
+    "timestamp": "2024-11-28T23:00:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_005",
+    "type": "积水监测",
+    "location": {
+      "district": "丰台区",
+      "street": "南三环草桥",
+      "lat": 39.8584,
+      "lng": 116.2869
+    },
+    "value": 0.42,
+    "unit": "m",
+    "threshold": 0.3,
+    "timestamp": "2024-11-28T08:30:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_006",
+    "type": "PM2.5",
+    "location": {
+      "district": "通州区",
+      "street": "运河商务区",
+      "lat": 39.9097,
+      "lng": 116.6569
+    },
+    "value": 165,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2024-11-28T17:00:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_007",
+    "type": "路灯电流",
+    "location": {
+      "district": "石景山区",
+      "street": "首钢园路",
+      "lat": 39.9059,
+      "lng": 116.1436
+    },
+    "value": 0.1,
+    "unit": "A",
+    "threshold": 1.0,
+    "timestamp": "2024-11-28T20:00:00Z",
+    "status": "异常"
+  },
+  {
+    "sensorId": "snr_008",
+    "type": "垃圾桶满溢",
+    "location": {
+      "district": "昌平区",
+      "street": "回龙观大街",
+      "lat": 40.0724,
+      "lng": 116.3264
+    },
+    "value": 0.88,
+    "unit": "%",
+    "threshold": 0.8,
+    "timestamp": "2024-11-28T12:00:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_009",
+    "type": "PM2.5",
+    "location": {
+      "district": "朝阳区",
+      "street": "国贸CBD",
+      "lat": 39.9085,
+      "lng": 116.4575
+    },
+    "value": 125,
+    "unit": "μg/m³",
+    "threshold": 75,
+    "timestamp": "2024-11-28T18:00:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_010",
+    "type": "噪音监测",
+    "location": {
+      "district": "海淀区",
+      "street": "五道口",
+      "lat": 39.9925,
+      "lng": 116.3426
+    },
+    "value": 68,
+    "unit": "dB",
+    "threshold": 55,
+    "timestamp": "2024-11-28T14:30:00Z",
+    "status": "超标"
+  },
+  {
+    "sensorId": "snr_011",
+    "type": "积水监测",
+    "location": {
+      "district": "东城区",
+      "street": "东长安街",
+      "lat": 39.9055,
+      "lng": 116.3976
+    },
+    "value": 0.15,
+    "unit": "m",
+    "threshold": 0.3,
+    "timestamp": "2024-11-28T10:00:00Z",
+    "status": "正常"
+  },
+  {
+    "sensorId": "snr_012",
+    "type": "路灯电流",
+    "location": {
+      "district": "西城区",
+      "street": "西单北大街",
+      "lat": 39.9068,
+      "lng": 116.3731
+    },
+    "value": 1.2,
+    "unit": "A",
+    "threshold": 1.0,
+    "timestamp": "2024-11-28T22:00:00Z",
+    "status": "正常"
+  }
+]
