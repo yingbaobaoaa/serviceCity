@@ -3,7 +3,10 @@
     <el-card>
       <template #header>
         <div class="header">
-          <h4>数据列表</h4>
+          <div class="title-section">
+            <el-icon class="header-icon data-icon"><DataBoard /></el-icon>
+            <h4>数据列表</h4>
+          </div>
           <div class="view-info">
             当前视图: {{ viewModeText }} | 总计: {{ total }} 条
           </div>
@@ -64,7 +67,8 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import type { CityEvent, SensorData, ViewMode } from '@/types'
+import type { CityEvent, SensorData } from '@/types'
+import { DataBoard } from '@element-plus/icons-vue'
 
 const props = defineProps<{
   data: Array<CityEvent | SensorData & { dataType: string; displayTime: string }>
@@ -82,13 +86,15 @@ const viewModeText = computed(() => {
   const firstItem = props.data[0]
   if (!firstItem) return '无数据'
 
-  if (firstItem.dataType === 'event') return '事件视图'
-  if (firstItem.dataType === 'sensor') return '传感器视图'
+  if ('dataType' in firstItem) {
+    if (firstItem.dataType === 'event') return '事件视图'
+    if (firstItem.dataType === 'sensor') return '传感器视图'
+  }
   return '合并视图'
 })
 
 const hasSensorValue = computed(() => {
-  return props.data.some(item => item.dataType === 'sensor')
+  return props.data.some(item => 'dataType' in item && item.dataType === 'sensor')
 })
 
 function formatTime(timeStr: string): string {
@@ -132,23 +138,77 @@ function handleSizeChange(size: number) {
   margin-bottom: 30px;
 }
 
+.data-list :deep(.el-card) {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.data-list :deep(.el-card:hover) {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 30px;
 }
 
-.header h4 {
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-icon {
+  font-size: 22px;
+  color: #13c2c2;
+}
+
+
+
+.data-list :deep(.el-table) {
+  border-radius: 12px;
+  overflow: hidden;
   margin: 0;
 }
 
-.view-info {
-  color: #909399;
-  font-size: 14px;
+.pagination {
+  margin-top: 24px;
+  text-align: right;
+  padding: 20px;
+  border-radius: 12px;
 }
 
-.pagination {
-  margin-top: 20px;
-  text-align: right;
+/* 添加表格行的图标美化 */
+.data-list :deep(.el-table .el-tag) {
+  border-radius: 12px;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-list :deep(.el-table .el-tag--primary) {
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  color: white;
+}
+
+.data-list :deep(.el-table .el-tag--warning) {
+  background: linear-gradient(135deg, #faad14 0%, #ffc53d 100%);
+  color: white;
+}
+
+.data-list :deep(.el-table .el-tag--success) {
+  background: linear-gradient(135deg, #52c41a 0%, #73d13d 100%);
+  color: white;
+}
+
+.data-list :deep(.el-table .el-tag--danger) {
+  background: linear-gradient(135deg, #ff4d4f 0%, #ff7875 100%);
+  color: white;
 }
 </style>

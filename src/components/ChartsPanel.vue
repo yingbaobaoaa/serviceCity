@@ -2,18 +2,24 @@
   <div class="charts-panel">
     <el-row :gutter="20">
       <el-col :span="12">
-        <el-card>
+        <el-card class="chart-card event-chart">
           <template #header>
-            <h4>事件类型分布</h4>
+            <div class="card-header">
+              <el-icon class="header-icon pie-icon"><PieChart /></el-icon>
+              <h4>事件类型分布</h4>
+            </div>
           </template>
           <div ref="eventTypeChart" class="chart"></div>
         </el-card>
       </el-col>
 
       <el-col :span="12">
-        <el-card>
+        <el-card class="chart-card district-chart">
           <template #header>
-            <h4>区域分布</h4>
+            <div class="card-header">
+              <el-icon class="header-icon bar-icon"><Histogram /></el-icon>
+              <h4>区域分布</h4>
+            </div>
           </template>
           <div ref="districtChart" class="chart"></div>
         </el-card>
@@ -26,6 +32,7 @@
 import { ref, onMounted, watch, nextTick } from 'vue'
 import * as echarts from 'echarts'
 import type { EChartsType } from 'echarts'
+import { PieChart, Histogram } from '@element-plus/icons-vue'
 
 const props = defineProps<{
   statistics: {
@@ -149,8 +156,50 @@ onMounted(() => {
   margin-bottom: 30px;
 }
 
+.chart-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.chart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.chart-card :deep(.el-card__header) {
+  padding: 16px 20px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.header-icon {
+  font-size: 20px;
+}
+
+.pie-icon {
+  color: #722ed1;
+}
+
+.bar-icon {
+  color: #1890ff;
+}
+
 .chart {
   width: 100%;
   height: 300px;
+  padding: 10px;
 }
 </style>
