@@ -130,7 +130,7 @@ function updateCharts() {
       },
       yAxis: {
         type: 'category',
-        data: props.viewMode == 'events' ? props.statistics.districtDistribution.map(item => item.value) : props.statistics.sensorDistricts.map(item => item.value)
+        data: props.statistics.districtDistribution.map(item => item.name)
       },
       series: [
         {
@@ -177,6 +177,7 @@ watch(() => props.viewMode, () => {
 }, { deep: true })
 onMounted(() => {
   nextTick(() => {
+    console.log("props.statistics.districtDistribution--", props.statistics.districtDistribution)
     initCharts()
   })
 
