@@ -33,7 +33,7 @@ export class AlertScheduler {
     // 设置定时器，每分钟检测一次
     this.intervalId = setInterval(() => {
       this.checkAlerts()
-    }, 1000) // 1分钟 = 60000ms
+    }, 60000) // 1分钟 = 60000ms
   }
 
   // 停止定时检测
@@ -63,22 +63,35 @@ export class AlertScheduler {
       const events = dataStore.events
       const sensors = dataStore.sensors
 
-      if (events.length === 0 && sensors.length === 0) {
-        console.log('无数据，跳过预警检测')
-        return
-      }
-
       console.log(`开始预警检测 - 事件: ${events.length}, 传感器: ${sensors.length}`)
       this.lastCheckTime.value = new Date().toISOString()
 
-      // 检测真实的预警规则
-      const alerts = await alertDetector.detectAlerts(events, sensors)
+      // 每分钟都生成模拟预警用于演示
+      console.log('每分钟生成预警弹窗')
+      const mockAlerts = alertDetector.generateMockAlerts(events, sensors)
 
-      // 如果没有真实预警，生成模拟预警用于演示
-      if (alerts.length === 0) {
-        console.log('生成模拟预警用于演示')
-        const mockAlerts = alertDetector.generateMockAlerts(events, sensors)
-
+      // 为了确保有预警弹出，如果生成的预警为空，创建一个默认预警
+      if (mockAlerts.length === 0) {
+        const defaultAlert = {
+          id: Date.now().toString(),
+          type: 'cluster' as const,
+          title: '城市管理提醒',
+          description: '系统正在监控城市管理状态，一切运行正常。',
+          level: 'low' as const,
+          location: {
+            district: '系统监控',
+            street: '正常运行',
+            lat: 39.9042,
+            lng: 116.4074
+          },
+          triggerTime: new Date().toISOString(),
+          aiSuggestion: '系统运行正常，无需特别处理。',
+          status: 'pending' as const,
+          priority: 'low' as const
+        }
+        alertService.addAlert(defaultAlert)
+        this.triggerAlertNotifications([defaultAlert])
+      } else {
         for (const mockAlert of mockAlerts) {
           // 检查是否已存在类似的模拟预警
           const existingAlerts = alertService.getAlerts()
@@ -86,21 +99,14 @@ export class AlertScheduler {
             existing.type === mockAlert.type &&
             existing.location.district === mockAlert.location.district &&
             existing.location.street === mockAlert.location.street &&
-            this.isRecentAlert(existing.triggerTime, mockAlert.triggerTime, 10)
+            this.isRecentAlert(existing.triggerTime, mockAlert.triggerTime, 1) // 缩短为1分钟
           )
 
           if (!exists) {
             alertService.addAlert(mockAlert)
           }
         }
-      }
-
-      if (alerts.length > 0) {
-        console.log(`检测到 ${alerts.length} 个新预警`)
-        // 触发预警通知
-        this.triggerAlertNotifications(alerts)
-      } else {
-        console.log('未检测到新的预警')
+        this.triggerAlertNotifications(mockAlerts)
       }
 
     } catch (error) {

@@ -134,6 +134,19 @@ const handleAlertDismiss = (alertId: string) => {
   console.log('用户关闭预警:', alertId)
 }
 
+// 定时检查新预警
+let alertCheckInterval: number | null = null
+const checkForNewAlerts = () => {
+  const currentAlerts = alertService.getAlerts()
+  const currentAlertIds = new Set(alerts.value.map(a => a.id))
+  const newAlerts = currentAlerts.filter(alert => !currentAlertIds.has(alert.id))
+
+  if (newAlerts.length > 0) {
+    console.log(`检测到 ${newAlerts.length} 个新预警`)
+    alerts.value = currentAlerts
+  }
+}
+
 // Vue 生命周期钩子
 onMounted(() => {
   // 延迟加载数据，确保页面先渲染
@@ -142,12 +155,24 @@ onMounted(() => {
   // 初始化预警系统
   setTimeout(() => {
     initializeAlerts()
-  }, 3000) // 30秒后启动预警系统，确保数据已加载
+
+    // 启动定时检查新预警
+    alertCheckInterval = setInterval(() => {
+      checkForNewAlerts()
+    }, 1000) // 每秒检查一次新预警
+  }, 3000) // 3秒后启动预警系统，确保数据已加载
 })
 
 onUnmounted(() => {
   // 停止预警定时检测
   alertScheduler.stop()
+
+  // 停止预警检查定时器
+  if (alertCheckInterval) {
+    clearInterval(alertCheckInterval)
+    alertCheckInterval = null
+  }
+
   console.log('预警定时检测已停止')
 })
 
