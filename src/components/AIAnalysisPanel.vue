@@ -30,21 +30,17 @@
 
     <!-- 流式输出显示 -->
     <div v-if="isStreaming || fullContent" class="streaming-result">
-      <el-card>
-        <template #header>
-          <div class="result-header">
-            <h4>
-              <span v-if="isStreaming">AI 实时分析</span>
-              <span v-else>AI 分析结果</span>
-            </h4>
-            <div v-if="isStreaming" class="typing-indicator">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
+        <div class="result-header">
+          <h4 style="margin-bottom: 10px;">
+            <span v-if="isStreaming">AI 实时分析</span>
+            <span v-else>AI 分析结果</span>
+          </h4>
+          <div v-if="isStreaming" class="typing-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
-        </template>
-
+        </div>
         <!-- 流式内容显示 -->
         <div v-if="isStreaming || (!formattedResult && fullContent)" class="streaming-content">
           <div class="content-wrapper" v-html="formattedStreamingContent"></div>
@@ -91,7 +87,6 @@
             重新分析
           </el-button>
         </div>
-      </el-card>
     </div>
   </div>
 </template>

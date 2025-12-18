@@ -1,7 +1,5 @@
 <template>
   <div class="data-selection-panel">
-    <h4>选择分析数据</h4>
-
     <el-tabs v-model="activeTab">
       <el-tab-pane label="事件数据" name="events">
         <el-table
@@ -11,9 +9,9 @@
         >
           <el-table-column type="selection" width="55" />
           <el-table-column prop="id" label="ID" width="140" />
-          <el-table-column prop="type" label="类型" width="120" />
-          <el-table-column prop="location.district" label="区域" width="100" />
-          <el-table-column prop="reportTime" label="上报时间" width="150">
+          <el-table-column prop="type" label="类型" />
+          <el-table-column prop="location.district" label="区域" />
+          <el-table-column prop="reportTime" label="上报时间" >
             <template #default="{ row }">
               {{ formatTime(row.reportTime) }}
             </template>
@@ -29,9 +27,9 @@
         >
           <el-table-column type="selection" width="55" />
           <el-table-column prop="sensorId" label="传感器ID" width="140" />
-          <el-table-column prop="type" label="类型" width="120" />
-          <el-table-column prop="location.district" label="区域" width="100" />
-          <el-table-column label="数值" width="100">
+          <el-table-column prop="type" label="类型" />
+          <el-table-column prop="location.district" label="区域" />
+          <el-table-column label="数值" >
             <template #default="{ row }">
               {{ row.value }}{{ row.unit }}
             </template>
@@ -109,9 +107,6 @@ watch(() => props.sensors, () => {
 </script>
 
 <style scoped>
-.data-selection-panel {
-  margin-top: 30px;
-}
 
 .data-selection-panel h4 {
   margin-bottom: 20px;

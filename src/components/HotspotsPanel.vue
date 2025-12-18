@@ -1,7 +1,5 @@
 <template>
   <div class="hotspots-panel">
-    <h4>问题高发区域 TOP 10</h4>
-
     <el-table :data="hotspots" stripe>
       <el-table-column label="排名" width="60">
         <template #default="{ $index }">
