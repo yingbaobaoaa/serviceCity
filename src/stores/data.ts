@@ -42,6 +42,8 @@ export const useDataStore = defineStore('data', () => {
   const statistics = computed(() => {
     const eventTypes = new Map<string, number>()
     const districts = new Map<string, number>()
+    const sensorTypes = new Map<string, number>()
+    const sensorDistricts = new Map<string, number>()
     const abnormalSensors = sensors.value.filter(s => s.status === '异常').length
     const onlineSensors = sensors.value.filter(s => s.status !== '离线').length
 
@@ -49,14 +51,19 @@ export const useDataStore = defineStore('data', () => {
       eventTypes.set(event.type, (eventTypes.get(event.type) || 0) + 1)
       districts.set(event.location.district, (districts.get(event.location.district) || 0) + 1)
     })
-
+    sensors.value.forEach(event => {
+      sensorTypes.set(event.type, (sensorTypes.get(event.type) || 0) + 1)
+      sensorDistricts.set(event.location.district, (sensorDistricts.get(event.location.district) || 0) + 1)
+    })
     return {
       totalEvents: events.value.length,
       totalSensors: sensors.value.length,
       abnormalSensors,
       onlineSensorRate: sensors.value.length > 0 ? (onlineSensors / sensors.value.length * 100).toFixed(1) : '0',
       eventTypes: Array.from(eventTypes.entries()).map(([name, value]) => ({ name, value })),
-      districtDistribution: Array.from(districts.entries()).map(([name, value]) => ({ name, value }))
+      sensorTypes: Array.from(sensorTypes.entries()).map(([name, value]) => ({ name, value })),
+      districtDistribution: Array.from(districts.entries()).map(([name, value]) => ({ name, value })),
+      sensorDistricts: Array.from(sensorDistricts.entries()).map(([name, value]) => ({ name, value }))
     }
   })
 

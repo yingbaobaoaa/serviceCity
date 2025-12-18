@@ -36,8 +36,10 @@ import { PieChart, Histogram } from '@element-plus/icons-vue'
 
 const props = defineProps<{
   statistics: {
-    eventTypes: Array<{ name: string; value: number }>
+    eventTypes: Array<{ name: string; value: number }>,
+    sensorTypes: Array<{ name: string; value: number }>
     districtDistribution: Array<{ name: string; value: number }>
+    sensorDistricts: Array<{ name: string; value: number }>
   }
   viewMode: string
 }>()
@@ -51,7 +53,6 @@ function initCharts() {
   if (eventTypeChart.value && districtChart.value) {
     eventTypeChartInstance = echarts.init(eventTypeChart.value)
     districtChartInstance = echarts.init(districtChart.value)
-
     updateCharts()
   }
 }
@@ -102,7 +103,7 @@ function updateCharts() {
           labelLine: {
             show: false
           },
-          data: props.statistics.eventTypes
+          data: props.viewMode == 'merged' ? [...props.statistics.eventTypes, ...props.statistics.sensorTypes] : props.viewMode == 'events' ?  props.statistics.eventTypes : props.statistics.sensorTypes
         }
       ]
     }
@@ -129,13 +130,13 @@ function updateCharts() {
       },
       yAxis: {
         type: 'category',
-        data: props.statistics.districtDistribution.map(item => item.name)
+        data: props.viewMode == 'events' ? props.statistics.districtDistribution.map(item => item.value) : props.statistics.sensorDistricts.map(item => item.value)
       },
       series: [
         {
           name: '事件数量',
           type: 'bar',
-          data: props.statistics.districtDistribution.map(item => item.value),
+          data: props.viewMode == 'events' ? props.statistics.districtDistribution.map(item => item.value) : props.statistics.sensorDistricts.map(item => item.value),
           itemStyle: {
             color: function(params: any) {
               const colorList = [
@@ -168,7 +169,12 @@ watch(() => props.statistics, () => {
     updateCharts()
   })
 }, { deep: true })
-
+watch(() => props.viewMode, () => {
+  nextTick(() => {
+    console.log('val--', props.viewMode)
+    updateCharts()
+  })
+}, { deep: true })
 onMounted(() => {
   nextTick(() => {
     initCharts()
